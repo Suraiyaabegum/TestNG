@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite">
+
+
+	<test name="Test1">
+		<groups>
+			<dependencies>
+				<group name="sanity" depends-on="smoke">             <!-- sanity is dependent on smoke  1st smoke is executed, 2nd sanity -->
+					<group name="regression" depends-on="sanity">    <!-- regression is dependent on sanity  3rd regression is executed-->
+					</group>
+				</group>
+			</dependencies>
+		</groups>
+		<classes>
+			<class name="DependencyTests.TestGroupDependency" />
+		</classes>
+	</test>
+</suite>
+
+<!-- if the smoke is failed(one of its method is failed) then sanity is not executed and regression is also not executed -->

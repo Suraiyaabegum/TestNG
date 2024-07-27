@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browserName" value="Chrome" />
+<parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+<parameter name="username" value ="Admin" />
+<parameter name="password" value ="admin" />
+<parameter name="sleepTime" value="3000"  />
+
+	<test name="ParameterAnnotaion">                                        <!-- one Test case -->
+		<classes>
+			<class name="Test.ParameterAnnotaion">
+				<methods>
+					<include name="LaunchApp" />                        <!-- one Test method -->
+					<include name="EnterLoginDetails" />                <!-- one Test method -->
+					<include name="verifyMyInfo" />                     <!-- one Test method -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ParameterAnnotaion1">                                       <!-- one Test case -->
+		<classes>
+			<class name="Test.ParameterAnnotaion">
+				<methods>
+					<include name="LaunchApp" />                         <!-- one Test method -->
+					<include name="EnterLoginDetails" />                 <!-- one Test method -->
+					<include name="NavigateToMyInfo" />                  <!-- one Test method -->
+					<include name="verifyMyInfo" />                      <!-- one Test method -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
+
+
+

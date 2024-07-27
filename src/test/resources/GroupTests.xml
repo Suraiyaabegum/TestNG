@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+	<test name="test1">                                        <!-- one Test case -->
+		<groups>
+			<define name="dailyBuild">
+				<include name="sanity" />
+				<include name="functional" />
+			</define>
+
+			<define name="weeklyBuild">
+				<include name="somke" />
+				<include name="functional" />
+				<include name="sanity" />
+				<include name="regression" />
+			</define>
+			<run>
+				<include name="all" />
+				<!-- <include name="functional" /> this is test group example -->
+			</run>
+		</groups>
+		<classes>
+			<class name="GroupTests.NewTest" />
+			<class name="GroupTests.NewTest2" />
+
+		</classes>
+	</test>
+	<test name="test2">
+		<classes>
+			<class name="GroupTests.NewTest" />
+			<class name="GroupTests.NewTest2" />
+
+		</classes>
+	</test>
+
+</suite> 

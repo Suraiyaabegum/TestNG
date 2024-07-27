@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="admin"/>
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+  <parameter name="username" value="Admin"/>
+  <test thread-count="5" name="ParameterAnnotaion(failed)">
+    <classes>
+      <class name="Test.ParameterAnnotaion">
+        <methods>
+          <include name="InitialiseBrowser"/>
+          <include name="Teardown"/>
+          <include name="EnterLoginDetails"/>
+          <include name="verifyMyInfo"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- Test.ParameterAnnotaion -->
+    </classes>
+  </test> <!-- ParameterAnnotaion(failed) -->
+  <test thread-count="5" name="ParameterAnnotaion1(failed)">
+    <classes>
+      <class name="Test.ParameterAnnotaion">
+        <methods>
+          <include name="InitialiseBrowser"/>
+          <include name="Teardown"/>
+          <include name="EnterLoginDetails"/>
+          <include name="verifyMyInfo"/>
+          <include name="LaunchApp"/>
+          <include name="NavigateToMyInfo"/>
+        </methods>
+      </class> <!-- Test.ParameterAnnotaion -->
+    </classes>
+  </test> <!-- ParameterAnnotaion1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
