@@ -8,7 +8,7 @@ public class DataSupplier {
 	public String[] dp10() {    
 		String[] data=new String[]{
 			"Suraiya",
-			"Rubesh",
+			"Sweadha",
 			"Aparna",
 			
 		};

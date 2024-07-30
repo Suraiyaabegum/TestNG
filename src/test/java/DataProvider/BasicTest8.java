@@ -13,7 +13,7 @@ public class BasicTest8 {
 	public String[] dp9() {     
 		String[] data=new String[]{
 			"Suraiya",
-			"Rubesh",
+			"Sweadha",
 			"Aparna",
 		};
 		return data	;

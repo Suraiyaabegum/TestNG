@@ -16,12 +16,7 @@ public class FlipKart {
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Suraiya");
 		driver.findElement(By.xpath("//button[@type='submit']//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//body/div[@id='container']/div[1]/div[2]/div[1]/div[1]/div[3]/a[1]/div[1]/div[1]/img[1]")).click();
-		
-		
-		
-		
-		
-	//	driver.close();
+		//driver.close();
 		
 
 	}
